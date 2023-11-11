@@ -1,0 +1,157 @@
+.App {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #f2f2f2; /* Light text */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+h2 {
+  color: #e63946; /* Bright red for headings */
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #f2f2f2; /* White for subheadings */
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+h4 {
+  color: #a8dadc;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Component Specific Styles */
+.race-result, .driver-standing, .next-race {
+  background: #1f1f1f; /* Slightly lighter than body for contrast */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Shadow for depth */
+  margin-bottom: 20px;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+  color: #e63946;
+}
+
+/* Top 3 Finishers Styling */
+.top-three {
+  list-style: none;
+  padding: 0;
+}
+
+.top-three li {
+  background: #2c2c2c; /* Default background for list items */
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-three li:first-child {
+  background: #ffd700; /* Gold for 1st place */
+}
+
+.top-three li:nth-child(2) {
+  background: #c0c0c0; /* Silver for 2nd place */
+}
+
+.top-three li:nth-child(3) {
+  background: #cd7f32; /* Bronze for 3rd place */
+}
+
+/* Layout Styles */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container {
+      flex-direction: column;
+  }
+}
+
+.nextRace{
+  background: #1f1f1f; /* Slightly lighter than body for contrast */
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2); /* Light shadow for depth */
+  color: #f2f2f2;
+}
+
+/* General Box Style */
+.box {
+  background: #1f1f1f; /* Slightly lighter than body for contrast */
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2); /* Light shadow for depth */
+  color: #f2f2f2;
+}
+
+/* Component Specific Styles */
+.race-result, .driver-standing {
+  background: #121212; /* Dark background */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.race-box, .driver-box {
+  margin-bottom: 15px;
+}
+
+.race-box h3, .driver-box h3 {
+  margin-top: 0;
+  color: #e63946; /* Bright red for headings */
+}
+
+/* Top 3 Finishers Styling Adjustments */
+.top-three li {
+  background: #2c2c2c;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* Additional Styling for Interactive Elements */
+.box:hover {
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
