@@ -159,6 +159,6 @@ p {
 
 @media screen and (max-width: 768px) {
   .flex-container {
-      flex-direction: column;
+      flex-direction: column-reverse;
   }
 }
