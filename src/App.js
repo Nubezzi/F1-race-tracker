@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="App">
       <NextRace />
-      <div className="container">
+      <div className="flex-container">
         <RaceResults />
         <DriverStandings />
       </div>
