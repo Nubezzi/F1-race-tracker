@@ -155,7 +155,40 @@ p {
   transform: scale(1.02);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
+.sticky-top-bar {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  padding: 10px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  display: none; /* Hidden by default */
+}
 
+.sticky-top-bar button {
+  color: #fff;
+  background: #e63946;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  max-height: fit-content;
+  height: fit-content;
+}
+
+.sticky-top-bar h3 {
+  height: fit-content;
+  margin-block-start: auto;
+  margin-block-end: auto;
+}
+
+/* Display the bar only on mobile devices */
+@media screen and (max-width: 768px) {
+  .sticky-top-bar {
+    display: flex;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .flex-container {
