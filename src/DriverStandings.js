@@ -37,7 +37,7 @@ const DriverStandings = () => {
     };
 
     if (loading) return <div>Loading...</div>;
-    if (error) return <div>API loading error</div>;
+    if (error) return <div>No data available</div>;
 
     return (
         <div>
